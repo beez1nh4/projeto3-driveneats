@@ -144,12 +144,18 @@ button{
     display: flex;
     flex-direction: column;
 }
+.icone{
+    display: none;
+}
 ion-icon{
-    z-index: 5;
+    z-index: 1000; 
     width: 19px;
     height: 19px;
     color: #32B72F;
     position: absolute;
     bottom: 14px;
     right: 14px;
+}
+.aparece{
+    display: initial;
 }
