@@ -132,13 +132,13 @@ function confirmarPedido(){
     }
 }
 function envioWpp(){
-    let mensagem = `Olá, gostaria de fazer o pedido: \n
-    - Prato: ${prato}\n
-    - Bebida: ${bebida}\n
-    - Sobremesa: ${sobremesa}\n
-    Total: R$ ${precoFinal} \n
+    let mensagem = `Olá, gostaria de fazer o pedido:
+    - Prato: ${prato}
+    - Bebida: ${bebida}
+    - Sobremesa: ${sobremesa}
+    Total: R$ ${precoFinal}
     
-    Nome: ${nomeDaPessoa}\n
+    Nome: ${nomeDaPessoa}
     Endereço: ${endereco}`
     let link = 'https://wa.me/5511987067348?text='+encodeURIComponent(mensagem)
     window.open(link);

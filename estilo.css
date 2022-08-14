@@ -67,6 +67,7 @@ h2{
 .height197{
     height: 197px;
 }
+/* apenas visualização mobile*/
 ::-webkit-scrollbar{
     display: none;
 }
