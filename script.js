@@ -100,7 +100,7 @@ function confirmarPedido(){
         let precoBebidaSemRS = precoBebida.replace('R$','');
         let precoBebidaCorrigido = precoBebidaSemRS.replace(',','.');
         precoBebidaNumero = Number(precoBebidaCorrigido);
-        let precoSobremesaSemRS = precoPrato.replace('R$','');
+        let precoSobremesaSemRS = precoSobremesa.replace('R$','');
         let precoSobremesaCorrigido = precoSobremesaSemRS.replace(',','.');
         precoSobremesaNumero = Number(precoSobremesaCorrigido);
         const soma = precoPratoNumero + precoBebidaNumero + precoSobremesaNumero;
