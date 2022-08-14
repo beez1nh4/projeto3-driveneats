@@ -4,6 +4,8 @@ let sobremesa;
 let precoPrato;
 let precoBebida;
 let precoSobremesa;
+let nomeDaPessoa;
+let endereco;
 
 function selecionarPrato(selecionado){
     const jaSelecionado = document.querySelector('.pratos .selecionado');
@@ -79,10 +81,14 @@ let precoSobremesaNumero;
 let precoFinal;
 function confirmarPedido(){
     if (prato !== undefined && bebida !== undefined && sobremesa !== undefined){
+        //pedir nome e endereço
+        nomeDaPessoa = prompt('Qual seu nome?');
+        endereco = prompt('Qual seu endereço?');
+
         //abrir a guia do pedido
         const confirmacao = document.querySelector('.confirmar');
         confirmacao.classList.add('aparece');
-        console.log(confirmacao)
+
         //ligar o background
         const background = document.querySelector('.fundobranco');
         background.classList.add('aparece');
@@ -130,7 +136,10 @@ function envioWpp(){
     - Prato: ${prato}\n
     - Bebida: ${bebida}\n
     - Sobremesa: ${sobremesa}\n
-    Total: R$ ${precoFinal}`
+    Total: R$ ${precoFinal} \n
+    
+    Nome: ${nomeDaPessoa}\n
+    Endereço: ${endereco}`
     let link = 'https://wa.me/5511987067348?text='+encodeURIComponent(mensagem)
     window.open(link);
     }
@@ -139,7 +148,6 @@ function fechar(){
     //fechar a guia do pedido
     const confirmacao = document.querySelector('.confirmar');
     confirmacao.classList.remove('aparece');
-    console.log(confirmacao)
     //fechar o background
     const background = document.querySelector('.fundobranco');
     background.classList.remove('aparece');
