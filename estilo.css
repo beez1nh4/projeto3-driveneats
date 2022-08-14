@@ -3,6 +3,7 @@
 body{
     background-color: #E5E5E5;
     width: 100%;
+    position: relative;
 }
 
 .topo{
@@ -21,6 +22,7 @@ body{
     margin-top: 123px;
     margin-bottom: 108px;
     margin-left: 19px;
+    position: relative;
 }
 h1 {
     font-family: 'Righteous', cursive;
@@ -157,6 +159,92 @@ ion-icon{
     position: absolute;
     bottom: 14px;
     right: 14px;
+}
+
+.confirmar{
+    width: 91.0628%;
+    height: 353px;
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    position: absolute;
+    top: 336px;
+    left: 19px;
+    z-index: 21000;
+    display: none;
+}
+.fundobranco{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    z-index: 20000;
+    display: none;
+}
+.confirme{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 35.78px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.prato p, .bebida p, .sobremesa p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 35.78px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.018em;
+    margin-bottom: 11px;
+}
+.preco p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.018em;
+    margin-bottom: 24px;
+}
+.prato, .bebida, .sobremesa, .preco{
+    display: flex;
+    justify-content: space-between;
+}
+.certo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 35.78px;
+    font-weight: 700;
+    color: #50D074;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+    letter-spacing: 0.018em;
+    text-align: center;
+}
+.cancelar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23.44px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #50D074;
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+    letter-spacing: 0.018em;
+    text-align: center;
+}
+.alinhar2{
+    display: flex;
+    flex-direction: column;
+    width: 87.4396%;
+    margin-top: 21px;
+    margin: 0 auto;
 }
 .aparece{
     display: initial;

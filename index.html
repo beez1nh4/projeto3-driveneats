@@ -10,7 +10,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
+<body>>
     <div class="topo"> <!-- começo do topo -->
         <h1>DrivenEats</h1>
         <p class="slogan">Sua comida em 6 minutos</p>
@@ -225,7 +225,32 @@
         </div><!-- final das sobremesas  -->
     </div><!-- final do conteúdo  -->
     <div class="finalizar">
-        <button class="botaoSelecionar" onclick="envioWpp()">Selecione os 3 itens <br/> para fechar o pedido</button>
+        <button class="botaoSelecionar" onclick="confirmarPedido()">Selecione os 3 itens <br/> para fechar o pedido</button>
+    </div>
+    <div class="confirmar">
+        <div class="alinhar2">
+            <p class="confirme">Confirme seu pedido</p>
+            <div class="prato">
+                <p>nome do prato</p>
+                <p>preço</p>
+            </div>
+            <div class="bebida">
+                <p>nome da bebida</p>
+                <p>preço</p>
+            </div>
+            <div class="sobremesa">
+                <p>nome da sobremesa</p>
+                <p>preço</p>
+            </div>
+            <div class="preco">
+                <p>TOTAL</p>
+                <p>preço</p>
+            </div>
+            <button class="certo" onclick="envioWpp()">Tudo certo, pode pedir!</button>
+            <button class="cancelar" onclick="fechar()">Cancelar</button> 
+        </div>  
+    </div>
+    <div class="fundobranco">
     </div>
     <script src="script.js"></script>
 </body>
