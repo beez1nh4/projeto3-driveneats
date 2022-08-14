@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 100;
+    z-index: 10000;
 }
 
 .conteudo{
@@ -117,7 +117,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 10000;
 }
 button{
     width: 87.9227%;
@@ -133,7 +133,9 @@ button{
     border-radius: 50px;
     border: 0;
 }
-
+.botaofechar{
+    background-color: #32B72F;
+}
 .selecionado{
     box-shadow: 0 0 10px -4px rgba(0,0,0,0.25), inset 0px 0px 0px 5px #32B72F;
     border-radius: 9px;
